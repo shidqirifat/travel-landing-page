@@ -1,0 +1,7 @@
+:root {
+  --light-blue: hsl(190, 8%, 60%);
+  --dark-blue: hsl(190, 64%, 18%);
+  --title-color: hsl(190, 64%, 23%);
+  --text-color: hsl(190, 24%, 35%);
+  --body-color: hsl(190, 100%, 99%);
+}

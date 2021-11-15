@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/home1.jpg" alt="" class="home-background" />
+      <nav>
+        <div class="logo-head">
+          <a href="#">Travel</a>
+        </div>
+
+        <div class="menu-nav">
+          <i class="close-nav fas fa-times"></i>
+          <a class="open link" href="#home">Home</a>
+          <a class="link" href="#about">About</a>
+          <a class="link" href="#discover">Discover</a>
+          <a class="link" href="#">Place</a>
+        </div>
+        <i class="menu-icon fas fa-globe-asia"></i>
+      </nav>
+
+      <section class="home-container" id="home">
+        <div class="home-content">
+          <h4>Discover your place</h4>
+          <h2>Explore The Best <b>Beautiful Beaches</b></h2>
+          <button><a href="#">Explore</a></button>
+          <div class="logo-social">
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="home-info">
+            <div class="info-content">
+              <h2>5 best places to visit</h2>
+              <p>More <i class="fas fa-arrow-right"></i></p>
+            </div>
+            <div class="img-container img-home">
+              <img src="./assets/img/home2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="about-container" id="about">
+        <h2 class="title-content">
+          More Information <br />
+          About The Best Beaches
+        </h2>
+        <h4>
+          You can find the most beautiful and pleasant places at the best prices
+          with special discounts, you choose the place we will guide you all the
+          way to wait, get your place now.
+        </h4>
+        <button>Reserve a place</button>
+        <div class="about-img-container">
+          <div class="img-container about-img">
+            <img src="./assets/img/about1.jpg" alt="" />
+          </div>
+          <div class="img-container about-img">
+            <img src="./assets/img/about2.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="discover-section" id="discover">
+        <h2 class="title-content">
+          Discover the most<br />
+          attractive places
+        </h2>
+        <div class="discover-container swiper-container">
+          <div class="discover-slides swiper-wrapper">
+            <div class="swiper-slide slide-container img-container">
+              <img src="./assets/img/discover1.jpg" alt="" />
+              <div class="slide-info">
+                <h2 class="slide-title">Bali</h2>
+                <h4 class="slide-desc">24 tours available</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-container img-container">
+              <img src="./assets/img/discover2.jpg" alt="" />
+              <div class="slide-info">
+                <h2 class="slide-title">Kepulauan Seribu</h2>
+                <h4 class="slide-desc">17 tours available</h4>
+              </div>
+            </div>
+            <div class="swiper-slide slide-container img-container">
+              <img src="./assets/img/discover3.jpg" alt="" />
+
+              <div class="slide-info">
+                <h2 class="slide-title">Lombok</h2>
+                <h4 class="slide-desc">9 tours available</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide-container img-container">
+              <img src="./assets/img/discover4.jpg" alt="" />
+              <div class="slide-info">
+                <h2 class="slide-title">Raja Ampat</h2>
+                <h4 class="slide-desc">13 tours available</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="btn-top"><i class="fas fa-arrow-up"></i></button>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/43c91d6ead.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+      const swiper = new Swiper(".discover-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

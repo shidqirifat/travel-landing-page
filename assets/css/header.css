@@ -1,0 +1,138 @@
+header {
+  color: white;
+  position: relative;
+}
+.home-background {
+  position: absolute;
+  height: 100vh;
+  max-height: 640px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 83%;
+  z-index: -1;
+}
+nav {
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 15px;
+  z-index: 2;
+}
+nav .logo-head a {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+.nav-scroll {
+  background-color: var(--body-color);
+  box-shadow: 0px -6px 10px 2px rgba(0, 0, 0, 0.69);
+  color: var(--title-color);
+  transition: all 0.2s;
+}
+.nav-scroll a {
+  color: var(--title-color);
+}
+.menu-nav {
+  position: fixed;
+  top: 0;
+  right: -80px;
+  height: 100vh;
+  width: 0;
+  box-shadow: 5px -12px 10px 2px rgba(0, 0, 0, 0.69);
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 60px 40px;
+  background-color: white;
+  z-index: 2;
+  transition: all 0.4s ease-in-out 0.05s;
+  overflow: hidden;
+}
+.menu-nav.active {
+  width: 70%;
+  right: 0;
+}
+.menu-nav a {
+  color: var(--light-blue);
+  text-transform: uppercase;
+}
+.close-nav {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+}
+.menu-nav .open {
+  position: relative;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+.menu-nav .open::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  bottom: -10px;
+  background-color: var(--dark-blue);
+}
+.home-container {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  padding: 100px 120px 40px 15px;
+}
+.home-content h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 14px;
+}
+.home-content h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.home-content > button {
+  width: 100px;
+  height: 48px;
+  transition: all 0.2s;
+}
+.logo-social {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  gap: 30px;
+}
+.logo-social {
+  font-size: 1.2rem;
+}
+.home-info {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px 16px;
+  width: 230px;
+  background-color: var(--title-color);
+}
+.info-content h2 {
+  font-size: 0.9rem;
+  padding-bottom: 15px;
+}
+.info-content p {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.info-content p i {
+  padding-left: 6px;
+}
+.img-home {
+  width: 100px;
+  height: 70px;
+}
