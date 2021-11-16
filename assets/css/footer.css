@@ -1,0 +1,27 @@
+footer {
+  padding: 30px 20px;
+  color: var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+footer p {
+  font-size: 0.85rem;
+  color: rgb(121, 121, 121);
+  padding-bottom: 0.7rem;
+}
+.author-name {
+  font-size: 0.97rem;
+  font-weight: 400;
+  color: var(--light-blue);
+  letter-spacing: 0.5px;
+}
+.author-desc {
+  font-size: 0.83rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}

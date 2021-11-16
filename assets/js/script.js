@@ -4,6 +4,17 @@ const closeNav = document.querySelector(".close-nav");
 const headerNav = document.querySelector("header nav");
 const btnTop = document.querySelector(".btn-top");
 
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault()
+  });
+
+});
+
+
+
 const links = document.querySelectorAll(".link");
 const sections = document.querySelectorAll("section[id]");
 

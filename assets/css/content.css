@@ -178,7 +178,7 @@
 /* PLACE SECTION */
 .place-section {
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 90px;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -221,15 +221,17 @@
   padding: 0 0.3rem;
 }
 .place-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
+  text-shadow: 1px 1px var(--text-color);
   position: absolute;
   left: 0.5rem;
   top: 8rem;
 }
 .place-country {
-  font-size: 1rem;
+  font-size: 0.87rem;
   font-weight: 300;
+  text-shadow: 1px 1px var(--text-color);
   position: absolute;
   left: 0.5rem;
   top: 9.5rem;
@@ -237,6 +239,7 @@
 .place-price {
   font-size: 1rem;
   font-weight: 400;
+  text-shadow: 1px 1px var(--text-color);
   position: absolute;
   left: 0.5rem;
   bottom: 0.5rem;
@@ -247,4 +250,64 @@
   bottom: 0;
   padding: 13px 20px;
   z-index: 1;
+}
+
+/* SUBSCRIBE SECTION */
+.subscribe-container {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--title-color);
+  gap: 30px;
+}
+.subscribe-title {
+  font-size: 1.3rem;
+  color: white;
+}
+.subscribe-desc {
+  font-size: 1rem;
+  color: white;
+  padding: 0 10px;
+}
+.subscribe-container form {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.subscribe-container input {
+  width: 100%;
+  padding: 25px 10px;
+  font-size: 0.9rem;
+  color: rgb(179, 179, 179);
+  background-color: var(--body-color);
+  border: none;
+  outline: none;
+}
+.subscribe-button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  padding: 15px 30px;
+  /* background-color: var(--title-color); */
+  font-size: 1rem;
+}
+
+/* SPONSOR SECTION */
+.sponsor-container {
+  padding: 100px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  justify-content: center;
+  gap: 2.8rem;
+}
+.sponsor img {
+  opacity: 0.2;
+}
+.sponsor img:hover {
+  opacity: 0.4;
+  transform: scale(1);
 }
