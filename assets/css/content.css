@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
   padding: 70px 20px 0 20px;
 }
 .title-content {
@@ -43,9 +44,17 @@
 
 /* DISCOVER */
 .discover-section {
-  margin: 0 20px;
+  /* margin: 0 20px; */
+  width: 90%;
+  margin: 0 auto;
   padding-top: 80px;
   overflow: hidden;
+}
+.discover-slides {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* overflow: hidden; */
 }
 .slide-container {
   position: relative;
@@ -145,6 +154,8 @@
 .video-section {
   margin-bottom: 30px;
   padding-top: 40px;
+  width: 100%;
+  margin: 0 auto;
 }
 .video-section-container {
   padding: 0 20px;

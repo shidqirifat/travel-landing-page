@@ -1,4 +1,46 @@
-footer {
+@import url(./variabel.css);
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px;
+  gap: 15px;
+  color: var(--text-color);
+}
+.footer-desc {
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+.footer-content .social-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  padding-top: 20px;
+  color: var(--text-color);
+}
+.footer-content .social-container i {
+  font-size: 1.2rem;
+}
+.footer-content .title-content {
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.footer-content a {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.profile {
   padding: 30px 20px;
   color: var(--light-blue);
   display: flex;
@@ -6,17 +48,18 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 12px;
+  background-color: var(--title-color);
+  color: white;
 }
-footer p {
+.profile p {
   font-size: 0.85rem;
-  color: rgb(121, 121, 121);
   padding-bottom: 0.7rem;
 }
 .author-name {
+  display: block;
   font-size: 0.97rem;
   font-weight: 400;
-  color: var(--light-blue);
+  padding: 10px 0;
   letter-spacing: 0.5px;
 }
 .author-desc {
