@@ -10,7 +10,6 @@ buttons.forEach(button => {
   button.addEventListener("click", (e) => {
     e.preventDefault()
   });
-
 });
 
 
@@ -54,11 +53,13 @@ window.onscroll = function () {
 menuBtn.addEventListener("click", () => {
   menuNav.classList.add("active");
   closeNav.classList.add("active");
+  btnTop.classList.remove("active");
 });
 
 closeNav.addEventListener("click", () => {
   menuNav.classList.remove("active");
   closeNav.classList.remove("active");
+  btnTop.classList.add("active");
 });
 
 

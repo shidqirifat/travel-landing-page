@@ -68,3 +68,10 @@
   line-height: 1.4;
   letter-spacing: 0.2px;
 }
+
+@media screen and (min-width: 968px) {
+  .profile {
+    position: absolute;
+    width: 100vw;
+  }
+}
