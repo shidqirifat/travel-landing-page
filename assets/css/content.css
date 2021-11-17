@@ -349,6 +349,9 @@ main .about-title {
 }
 
 @media screen and (min-width: 680px) {
+  .home-content {
+    padding-right: 10rem;
+  }
   .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -392,6 +395,15 @@ main .about-title {
     transform: translateX(40%);
   }
 
+  .video-section {
+    grid-template-columns: repeat(1, minmax(100px, 0.8fr));
+  }
+  .video-section-container {
+    width: 90%;
+  }
+  .video-container {
+    width: 30rem;
+  }
   .video-section .title-content {
     padding-top: 60px;
   }
@@ -403,6 +415,13 @@ main .about-title {
 }
 
 @media screen and (min-width: 968px) {
+  .home-container {
+    padding-bottom: 5rem;
+  }
+  .logo-social {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
   /* ABOUT SECTION */
   section .title-content {
     font-size: 1.4rem;
@@ -456,6 +475,9 @@ main .about-title {
 }
 
 @media screen and (min-width: 1200px) {
+  .home-content {
+    padding-right: 20rem;
+  }
   .experience-image-container {
     width: 30%;
   }
@@ -481,8 +503,14 @@ main .about-title {
     transform: translateX(15%);
   }
 
+  .video-section-container {
+    max-width: 1000px;
+  }
   .video-section-container .title-content {
     padding-top: 220px;
+  }
+  .video-container {
+    width: 50rem;
   }
   .place-content-container {
     grid-template-columns: repeat(5, 1fr);
