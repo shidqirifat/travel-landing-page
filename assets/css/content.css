@@ -503,8 +503,12 @@ main .about-title {
     transform: translateX(15%);
   }
 
+  .video-section {
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
   .video-section-container {
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1600px;
   }
   .video-section-container .title-content {
     padding-top: 220px;
