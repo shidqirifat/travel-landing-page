@@ -380,5 +380,28 @@
         loop: true,
       });
     </script>
+
+    <script>
+      Notification.requestPermission();
+      console.log(Notification.permission);
+
+      function showNotification() {
+        console.log("object");
+        const notification = new Notification("Hi there!", {
+          body: "hey you",
+        });
+      }
+
+      if (Notification.permission === "granted") {
+        showNotification();
+        console.log("boleh");
+      } else if (Notification.permission === "denied") {
+        Notification.requestPermission().then((permission) => {
+          if (permission === "granted") {
+            showNotification();
+          }
+        });
+      }
+    </script>
   </body>
 </html>
